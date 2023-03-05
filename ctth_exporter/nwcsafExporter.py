@@ -3,6 +3,8 @@ import numpy as np
 from glob import glob
 from pandas import DataFrame
 from os import path, mkdir
+import warnings
+warnings.filterwarnings(action='ignore', category=RuntimeWarning)
 
 
 class CtthNwcsafExporter:
@@ -91,11 +93,10 @@ class CtthNwcsafExporter:
                             compute=False)
         
         
-        scene.save_datasets(filename="{name}.jpg",
+        scene.save_datasets(filename="{name}.png",
                             datasets=channels, 
                             writer='simple_image', 
-                            base_dir=f"{output_dir}/ctth_{self.filename[-19:-3:]}/image",
-                            compute=False)
+                            base_dir=f"{output_dir}/ctth_{self.filename[-19:-3:]}/images")
         
 
         if not path.exists(f"{output_dir}/ctth_{self.filename[-19:-3:]}/ASCII"):
