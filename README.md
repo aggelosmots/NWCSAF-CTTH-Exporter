@@ -22,6 +22,12 @@ pip install satpy h5netcdf netcdf4 rasterio
 ## Execution
 To run the program, simply run [MainWindow.py](ctth_exporter/MainWindow.py)
 
+## Input
+
+**NetCDF files** with format:
+
+*S_NWC_CTTH_MSG4_MSG-N-VISIR_T_Z.nc*
+
 ## Output
 
 In the output directory, those will show up:
