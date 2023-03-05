@@ -24,6 +24,17 @@ To run the program, simply run [MainWindow.py](ctth_exporter/MainWindow.py)
 
 ## Output
 
-In the output directory, three new folders will show up:
+In the output directory, those will show up:
 
 1) A log.csv file shows up with the history of previously executed files in order to not export them again
+2) The exported file will show up as a folder with the the csv, GeoTIFF and images
+
+## Features
+### **Selecting Area**
+User can select a rectagle area in order to export only a Region of Intrest
+
+### **Waiting for new files in background**
+CTTH products are used in Nowcasting and new CTTH files can be received anytime in an input folder. This application is ready to export those new files whenever they show up.
+
+### **Sleep Mode**
+User can put an execution timer, putting app in sleep on the backdround

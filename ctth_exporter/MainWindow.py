@@ -48,7 +48,7 @@ def write_in_file(filename_input, output):
 
 
 def checkTimerVal():
-    if int(Minutes.get()) <= 0:
+    if int(Timer.get()) <= 0:
         print("INVALID VALUE: Value should be larger than 0 (sec)")
         messagebox.showinfo("INVALID VALUE", "Value should be larger than 0 (sec)")
         return False
@@ -178,7 +178,7 @@ if __name__ == "__main__":
     # Tk variables
     Input_path = StringVar()
     Output_path = StringVar()
-    Minutes = IntVar()
+    Timer = IntVar()
     Latitude1 = IntVar()
     Latitude2 = IntVar()
     Longtitude1 = IntVar()
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     # Timer Label, Entry and Combomenu
     timer = Label(gui, text="Timer")
     timer.grid(row=5)
-    timerEntry = Entry(gui,textvariable=Minutes)
+    timerEntry = Entry(gui,textvariable=Timer)
     timerEntry.grid(row=6)
 
     selectTimeFormat = ttk.Combobox(gui, textvariable=TimerFormatEntry)
@@ -238,7 +238,7 @@ if __name__ == "__main__":
     coordNote.grid(row=9, column=2, columnspan=2, sticky='n')
 
     # Thread Creation
-    thread = Thread(target=main, args=[Input_path, Output_path, Minutes, TimerFormatEntry])
+    thread = Thread(target=main, args=[Input_path, Output_path, Timer, TimerFormatEntry])
     thread.daemon = True
 
     # Execution button customization
