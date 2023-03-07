@@ -43,4 +43,4 @@ User can select a rectagle area in order to export only a Region of Intrest
 CTTH products are used in Nowcasting and new CTTH files can be received anytime in an input folder. This application is ready to export those new files whenever they show up.
 
 ### **Sleep Mode**
-User can put an execution timer, putting app in sleep on the backdround
+User can put an execution timer, putting app in sleep on the background
