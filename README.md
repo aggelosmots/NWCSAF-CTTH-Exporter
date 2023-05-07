@@ -9,6 +9,8 @@ This is a small project for exporting data of ctth files in csv, png and tif for
 This app was developed with satpy package
 
 ## Installation
+Python v3.9.x recommended
+
 
 Using conda
 ```
@@ -20,7 +22,9 @@ pip install satpy h5netcdf netcdf4 rasterio
 ```
 
 ## Execution
-To run the program, simply run [MainWindow.py](ctth_exporter/MainWindow.py)
+Run [MainWindow.py](ctth_exporter/MainWindow.py)
+
+```python MainWidnow.py```
 
 ## Input
 
